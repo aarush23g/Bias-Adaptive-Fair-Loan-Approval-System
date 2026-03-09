@@ -1,0 +1,61 @@
+# ------------------------------
+# Python
+# ------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python build
+build/
+dist/
+*.egg-info/
+
+# ------------------------------
+# Jupyter
+# ------------------------------
+.ipynb_checkpoints/
+
+# ------------------------------
+# Pytest
+# ------------------------------
+.pytest_cache/
+.cache/
+
+# ------------------------------
+# IDEs
+# ------------------------------
+.vscode/
+.idea/
+
+# ------------------------------
+# OS files
+# ------------------------------
+.DS_Store
+Thumbs.db
+
+# ------------------------------
+# Experiment outputs
+# ------------------------------
+results/
+logs/
+outputs/
+
+# ------------------------------
+# Dataset files (optional)
+# keep if you want reproducible repo
+# ------------------------------
+data/raw/*.csv
+data/raw/*.data
+
+# ------------------------------
+# Temporary files
+# ------------------------------
+*.log
+*.tmp
+*.swp

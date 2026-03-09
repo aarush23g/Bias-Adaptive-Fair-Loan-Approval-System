@@ -1,0 +1,28 @@
+[project]
+name = "bias-adaptive-fair-loan-approval"
+version = "0.1.0"
+description = "Bias-Adaptive Fair Loan Approval System using Adaptive Fairness Controllers"
+authors = [
+    {name = "Aarush Garg"}
+]
+readme = "README.md"
+requires-python = ">=3.9"
+
+dependencies = [
+    "numpy",
+    "pandas",
+    "scikit-learn",
+    "lightgbm",
+    "matplotlib",
+    "seaborn",
+    "pyyaml",
+    "fairlearn",
+    "shap",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

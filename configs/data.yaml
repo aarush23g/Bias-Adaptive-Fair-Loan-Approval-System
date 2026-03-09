@@ -1,0 +1,59 @@
+# --------------------------------------------------
+# GLOBAL DATASET SELECTION
+# --------------------------------------------------
+dataset: lending_club
+
+# --------------------------------------------------
+# TEST MODE (FOR PYTEST ONLY)
+# When true → always loads German (small dataset)
+# Prevents RAM crashes during tests
+# --------------------------------------------------
+test_mode: false
+
+# --------------------------------------------------
+# DATASET CONFIGS
+# --------------------------------------------------
+datasets:
+
+  german:
+    path: data/raw/german_credit.csv
+    target: credit_risk
+    sensitive_attributes:
+      sex:
+        privileged: male
+        unprivileged: female
+      age_group:
+        privileged: old
+        unprivileged: young
+
+  lending_club:
+    path: data/raw/lending_club.csv
+    target: loan_status
+    sensitive_attributes:
+      income_group:
+        privileged: high
+        unprivileged: low
+
+  adult:
+    path: data/raw/adult.csv
+    target: income
+    sensitive_attributes:
+      sex:
+        privileged: Male
+        unprivileged: Female
+      race:
+        privileged: White
+        unprivileged: Non-White
+
+# --------------------------------------------------
+# LENDING CLUB SAMPLING (MEMORY SAFE)
+# Used when test_mode = false AND dataset = lending_club
+# --------------------------------------------------
+sample_size_lending_club: 50000
+
+# --------------------------------------------------
+# SPLIT SETTINGS
+# --------------------------------------------------
+test_size: 0.2
+val_size: 0.1
+random_state: 42

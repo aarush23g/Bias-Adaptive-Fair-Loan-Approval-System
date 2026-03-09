@@ -1,0 +1,47 @@
+german:
+  columns:
+    - status
+    - duration
+    - credit_history
+    - purpose
+    - credit_amount
+    - savings
+    - employment
+    - installment_rate
+    - sex
+    - other_debtors
+    - residence
+    - property
+    - age
+    - other_installment_plans
+    - housing
+    - existing_credits
+    - job
+    - num_dependents
+    - telephone
+    - foreign_worker
+    - credit_risk
+
+  target_mapping:
+    good: 1
+    bad: 0
+
+lending_club:
+  use_columns:
+    - loan_amnt
+    - term
+    - int_rate
+    - grade
+    - emp_length
+    - home_ownership
+    - annual_inc
+    - verification_status
+    - loan_status
+    - purpose
+    - addr_state
+    - dti
+    - delinq_2yrs
+    - revol_util
+    - total_acc
+    - gender
+    - age
