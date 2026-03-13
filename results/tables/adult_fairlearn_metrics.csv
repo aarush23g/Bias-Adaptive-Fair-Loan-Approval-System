@@ -1,0 +1,2 @@
+model,accuracy,roc_auc,dp
+Fairlearn_ExponentiatedGradient,0.8552147239263803,0.7634804325607464,0.0

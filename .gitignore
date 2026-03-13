@@ -42,7 +42,6 @@ Thumbs.db
 # ------------------------------
 # Experiment outputs
 # ------------------------------
-results/
 logs/
 outputs/
 

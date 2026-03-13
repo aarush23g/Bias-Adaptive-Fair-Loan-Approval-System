@@ -1,0 +1,4 @@
+dataset,original_index,changed_feature,original_prediction,counterfactual_prediction
+german,810,status_A12,0,1
+german,340,status_A13,0,1
+german,87,status_A13,0,1

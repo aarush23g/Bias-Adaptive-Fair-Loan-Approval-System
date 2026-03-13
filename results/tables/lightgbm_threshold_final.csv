@@ -1,0 +1,2 @@
+model,accuracy,roc_auc,dp_income_group,threshold
+LightGBM_ThresholdOptimized,0.7946308724832215,0.684515406162465,-0.007927927927927958,0.3550847457627118

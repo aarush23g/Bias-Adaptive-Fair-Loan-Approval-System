@@ -1,0 +1,2 @@
+model,accuracy,roc_auc,dp
+FairLogisticRegression,0.7932885906040269,0.6586890756302521,-0.010350593933802332
